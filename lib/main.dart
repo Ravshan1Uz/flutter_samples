@@ -14,37 +14,37 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      body: Container(
-        padding: EdgeInsets.all(10.0),
-        margin: EdgeInsets.all(10.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          crossAxisAlignment: CrossAxisAlignment.end  ,
+      body: Row(
           children: [
-            Container(
-              padding: EdgeInsets.all(20.0),
-              color: Colors.cyan,
-              child: Text('one'),
+            Expanded(
+                flex: 3,
+                child: Image.asset('assets/unsplash1.jpg')),
+            Expanded(
+              flex: 1,
+              child: Container(
+                  padding: EdgeInsets.all(30.0),
+                  color: Colors.cyan,
+                  child: Text("1"),
+                ),
             ),
-            Row(
-              children: <Widget> [
-                Text('hello,'),
-                Text(' world'),
-              ],
+            Expanded(
+              flex: 1,
+              child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.pinkAccent,
+                child: Text("2"),
+              ),
             ),
-            Container(
-              padding: EdgeInsets.all(40.0),
-              color: Colors.amber,
-              child: Text('three'),
-            ),
-            Container(
-              padding: EdgeInsets.all(30.0),
-              color: Colors.pinkAccent,
-              child: Text('two'),
+            Expanded(
+              flex: 1,
+              child: Container(
+                padding: EdgeInsets.all(30.0),
+                color: Colors.amber,
+                child: Text("3"),
+              ),
             ),
           ],
         ),
-      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(Icons.add),
