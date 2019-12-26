@@ -7,22 +7,11 @@ void main() => runApp(MaterialApp(
         centerTitle: true,
       ),
       body: Center(
-        child: Text(
-          "Hello ninjas!",
-          style: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.bold,
-            letterSpacing: 2.0,
-            color: Colors.grey[600],
-            fontFamily: 'Aladin',
-          ),
-        ),
+        child: Text("Hello ninjas!"),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
         child: Text('click'),
-        backgroundColor: Colors.red[600],
       ),
     )
-  ),
+),
 );
